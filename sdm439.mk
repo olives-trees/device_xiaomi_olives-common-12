@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
     libwa_dof
@@ -402,4 +402,3 @@ $(call inherit-product, vendor/xiaomi/sdm439-common/sdm439-common-vendor.mk)
 
 # Inherit GoogleCamera
 $(call inherit-product-if-exists, vendor/GoogleCameraPine/Camera.mk)
-
