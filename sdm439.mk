@@ -222,6 +222,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.keystore2
 
+# Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/app.lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/app.lawnchair-hiddenapi-package-whitelist.xml 
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_sdm439
@@ -378,7 +385,8 @@ PRODUCT_PACKAGES += \
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-huaqin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-huaqin.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-huaqin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-huaqin.xml \
+    $(LOCAL_PATH)/permissions/privapp-permissions-app.lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-app.lawnchair.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
