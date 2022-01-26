@@ -309,6 +309,10 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     libxml2
 
+# Simple Gallery
+PRODUCT_PACKAGES += \
+    SimpleGallery
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
